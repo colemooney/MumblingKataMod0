@@ -1,0 +1,7 @@
+function accum(s) {
+	let mumble = s.toLowerCase().split("");  
+  for (let i = 0; i < mumble.length; i++){
+    mumble[i] = mumble[i].toUpperCase() + mumble[i].repeat(i);  
+  }
+  return mumble.join("-");
+}
